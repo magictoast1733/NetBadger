@@ -1,0 +1,5 @@
+if you enter nothing for if you wan to ping first or not system locks up: 1 time
+
+when opening ping opton sys locks up
+
+not seen but expected ---- if the DFG does not responf to a ping the first time a subnet it pinged but other hosts do one of the others will assume the DFG role and as of now with no user mod ability withouth starting over no way to fix it

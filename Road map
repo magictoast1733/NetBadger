@@ -1,0 +1,38 @@
+pro v1.0 local
+    X map host that are up based off ping
+    x on click show ports
+    X allow saving and loading of map
+    X show when a device is not seen on scan
+
+pro v2.0 more detail
+    ? when run will not make the map show device based on type(Rtr, Switch, End point, server)   --- shows end and route based off of a tracert
+    show things like host name if available------have not seen this ability yet
+    show how devices are connected --- barin storm how that could be show or known reliably
+    X allow users to enter more then /24
+    X nmap options
+    X make is so that if you ping multi range it will only turn red thoses in the range not seen
+    X add abulitys no nmap with out ping but not whole list
+
+pro v3.0 map control
+    allow user to move shapes
+    allow user to allow user to change connections
+    allow user to manually add devices
+    allow user to manually change dev details
+    make map infinite
+    indavidual deletes
+
+pro v4 add therat mapping
+    show in deatil pain reualts of nmap scan for vunraibitys
+    add silent mode
+    add scan speed controles
+
+pro v5.0 extend range
+    run a trace route and use that trace route data to drive mapping
+    add pre congig layouts (ring, hyararchy etc)
+    add a prompt to user of stop ip as to not ping sweep entire internet
+    add abulity for user to run this based of there ip
+
+pro v6.0 parallel networks and pcap import
+     from ping sweep and trace route determin parallel networks and mep them
+     allow users to import pcap and have it mapped
+

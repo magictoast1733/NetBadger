@@ -1,0 +1,5 @@
+python_nmap==0.7.1
+tqdm==4.67.3
+tqdm==4.67.3
+
+ifaddr

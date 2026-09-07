@@ -1,0 +1,41 @@
+#!/bin/python3
+import subprocess
+import nmap
+import my_ping
+from my_ping import ip_list
+
+# makes port scan object
+nm = nmap.PortScanner()
+
+#ping for up hosts
+my_ping.ping("10.149.100", "1", "15")
+print(f"Scanning IPs: {ip_list}")
+#for host in nm.all_hosts():
+#Run a nmap port scan op ips decoverd with a ping sweep
+targets = ' '.join(ip_list)
+nm.scan(hosts=targets, arguments='-p 1-1024 --open -T4')
+print("Done scanning results")
+
+# get a list of all hosts that are up
+#host_list = [(x, nm[x]['status']['state']) for x in nm.all_hosts()]
+for host in nm.all_hosts():
+    if nm[host].state() == 'up':
+        #ADD ({nm[host].hostnames()}) before is up if you think nmap can do reverse dns did not work in testing but did not test long
+        print(f"\nHost: {host}  is UP")
+
+        #check for ports
+        for proto in nm[host].all_protocols():
+            ports = nm[host][proto].keys()
+            for port in sorted(ports):
+                state = nm[host][proto][port]['state']
+                service = nm[host][proto][port]['name']
+                print(f" [+] Port: {port}/{proto}: {state} ({service})")
+
+
+#print(ip_list)
+#print(nm.all_hosts())
+#print(host_list)
+
+#for host, status in host_list:
+#    print(f'Host: {host} Status: {status}')
+

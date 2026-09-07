@@ -1,0 +1,14 @@
+#.ntbdr open?
+# current list of hosts
+    x.x.x.x
+    x.x.x.x
+    x.x.x.x
+
+# current seen devices
+
+
+                dev_info={
+                    "host:": host
+                    "host": host,
+                    "ports": port_list
+                }

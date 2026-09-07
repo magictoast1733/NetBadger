@@ -1,0 +1,6 @@
+Beta V2.0
+    now users can enter there own arguments for nmap
+    now uses can you / cidrs and larger the /24
+    now only turns red if the ip is actualy not seen when pinged
+    users can use ping target scan to nmap spesfic ips
+    shows end and route based off of a tracert done
