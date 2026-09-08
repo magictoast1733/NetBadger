@@ -5,3 +5,4 @@ env/
 build/
 dist/
 *.pyc
+make_exe.sh
